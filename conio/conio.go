@@ -24,6 +24,10 @@ func StopListening() {
 }
 
 func AddListener() {
+	// prompt
+	print(">> ")
+
+	// read an print
 	for {
 		char, key, err := keyboard.GetKey()
 		if err != nil {
@@ -34,6 +38,6 @@ func AddListener() {
 			break
 		}
 
-		fmt.Printf("You pressed: %c, ASCII: %d\n", char, char)
+		fmt.Printf("%c", char)
 	}
 }

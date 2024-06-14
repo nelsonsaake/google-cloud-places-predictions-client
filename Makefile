@@ -1,10 +1,11 @@
 .PHONY: run get ncommit
 
-NELSONSAAKE_GO_VERSION = v0.0.22
+NELSONSAAKE_GO_VERSION = v0.0.38
+ARGS = $(filter-out $@,$(MAKECMDGOALS))
 
 run:
 	cls
-	go run .
+	go run . $(ARGS)
 
 get:
 	cls

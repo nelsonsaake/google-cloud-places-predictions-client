@@ -1,4 +1,4 @@
-package pre
+package googlePlaces
 
 type PlaceType string
 
